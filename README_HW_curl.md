@@ -1,8 +1,9 @@
 # OTUS_Postman
 Ссылка на Сhallenges https://apichallenges.herokuapp.com/gui/challenges/2db27b14-daa4-4357-a1d2-031741f536ca
 
+Задание со звездочкой: Для сайта https://try.vikunja.io подготовьте три рабочих GET запроса и два рабочих PUT запроса.
 
-1.  ПРОСМОТРЕТЬ СПИСОК ЗАДАЧ
+*1.  ПРОСМОТРЕТЬ СПИСОК ЗАДАЧ
 
    "see_List - GET lists/6"
 
@@ -12,7 +13,7 @@ curl --location --request GET 'https://try.vikunja.io/api/v1/lists/6' \
 --data-raw '{"id":6,"title":"List1","description":"","identifier":"","hex_color":"","namespace_id":5,"owner":{"id":3,"name":"","username":"test1339","created":"2022-07-02T12:44:06+02:00","updated":"2022-07-02T12:44:06+02:00"},"is_archived":false,"background_information":null,"background_blur_hash":"","is_favorite":false,"position":393216,"created":"2022-07-02T12:50:04+02:00","updated":"2022-07-02T14:02:24+02:00"}
 '
 
-2. ПРОСМОТРЕТЬ ЗАДАЧУ
+*2. ПРОСМОТРЕТЬ ЗАДАЧУ
 
 "see_Task - GET tasks/26"
 
@@ -23,7 +24,7 @@ curl --location --request GET 'https://try.vikunja.io/api/v1/tasks/26' \
 '
 
 
-3. ПРОСМОТРЕТЬ КОМАНДУ
+*3. ПРОСМОТРЕТЬ КОМАНДУ
 
 "see_Team- GET teams/3"
 
@@ -33,7 +34,7 @@ curl --location --request GET 'https://try.vikunja.io/api/v1/teams/3' \
 --data-raw '{"id":3,"name":"Team1","description":"","created_by":{"id":2,"name":"","username":"test13390","created":"2022-07-03T09:50:47+02:00","updated":"2022-07-03T09:50:47+02:00"},"members":[{"id":2,"name":"","username":"test13390","created":"2022-07-03T09:50:47+02:00","updated":"2022-07-03T09:50:47+02:00","admin":true}],"created":"2022-07-03T09:52:51+02:00","updated":"2022-07-03T09:52:51+02:00"}'
 
 
-4. СОЗДАТЬ ЗАДАЧУ
+*4. СОЗДАТЬ ЗАДАЧУ
 
 "create_Task - PUT lists/10"
 
@@ -44,7 +45,7 @@ curl --location --request PUT 'https://try.vikunja.io/api/v1/lists/10' \
 '
 
 
-5. ДОБАВИТЬ КОММЕНТАРИЙ К ЗАДАЧЕ
+*5. ДОБАВИТЬ КОММЕНТАРИЙ К ЗАДАЧЕ
 
 "add_comment - PUT tasks/17/comments"
 
@@ -53,7 +54,7 @@ curl --location --request PUT 'https://try.vikunja.io/api/v1/tasks/17/comments' 
 --header 'Content-Type: application/json' \
 --data-raw '{"id":2,"comment":"Comment 1234","author":{"id":2,"name":"","username":"test13390","created":"2022-07-03T09:50:47+02:00","updated":"2022-07-03T09:50:47+02:00"},"created":"2022-07-03T10:25:51.029610002+02:00","updated":"2022-07-03T10:25:51.029620552+02:00"}'
 
-
+**
 6. ДОБАВИТЬ СПИСОК ЗАДАЧ В ИЗБРАННОЕ
 
 "iist_is_favorite - POST lists/6"
@@ -65,7 +66,7 @@ curl --location --request POST 'https://try.vikunja.io/api/v1/lists/6' \
 '
 
 
-7. ДОБАВИТЬ ОПИСАНИЕ К ЗАДАЧЕ
+**7. ДОБАВИТЬ ОПИСАНИЕ К ЗАДАЧЕ
 
 "create_description - POST tasks/25"
 
