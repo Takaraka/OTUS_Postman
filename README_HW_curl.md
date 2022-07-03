@@ -1,4 +1,7 @@
 # OTUS_Postman
+Ссылка на Сhallenges https://apichallenges.herokuapp.com/gui/challenges/2db27b14-daa4-4357-a1d2-031741f536ca
+
+
 1.  ПРОСМОТРЕТЬ СПИСОК ЗАДАЧ
 
    "see_List - GET lists/6"
